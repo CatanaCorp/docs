@@ -16,14 +16,19 @@ Catana processes all changes occurring on the release branch of enrolled reposit
 Adding a semi-column ":" after the TODO declaration is supported but optional.
 {% endhint %}
 
-**The content that comes after the annotation keyword is treated as the description**. Adding a description is fundamental to helping your team members and future you understand why a TODO was added.
+**The content that comes after the annotation keyword is treated as the title**. Adding a title is fundamental to helping your team members and future you understand why a TODO was added.
 
-<figure><img src="../.gitbook/assets/todo-title.png" alt="" width="563"><figcaption><p><strong>The TODO description is reflected on the Catana dashboard.</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/todo-title.png" alt="" width="563"><figcaption><p><strong>The TODO title is reflected on the Catana dashboard.</strong></p></figcaption></figure>
 
 \
-Catana will automatically assign authors during the initial TODO recording. Authorship is determined based on the git commit. Authors will be assigned to their TODOs regardless if they ever signed in to Catana.
+**Any additional comment lines following the TODO declaration are treated as the description**.\
+Adding a longer explanation to a TODO item is sometimes useful to provide context and help understand how to resolve it or what is blocking its immediate resolution.
 
-**Once in a while, users will receive email reminders about their TODOs.**
+<figure><img src="../.gitbook/assets/Todo description.png" alt="" width="563"><figcaption><p><strong>The TODO description is reflected on the Catana dashboard.</strong></p></figcaption></figure>
+
+***
+
+Catana will automatically assign authors during the initial TODO recording. Authorship is determined based on the git commit. Authors will be assigned to their TODOs regardless if they ever signed in to Catana.
 
 ### <mark style="color:blue;">Expiring TODOs</mark>
 
