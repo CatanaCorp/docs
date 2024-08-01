@@ -11,6 +11,7 @@
 * [Assigning TODOs](core-concepts/assigning-todos.md)
 * [Create, update and delete](core-concepts/create-update-and-delete.md)
 * [Validation](core-concepts/validation.md)
+* [Ignored TODOs](core-concepts/ignored-todos.md)
 
 ## 🔔 Triggers
 
