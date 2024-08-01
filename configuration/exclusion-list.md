@@ -10,7 +10,7 @@ description: Ignore TODOs from files of your choice
 
 </div>
 
-Catana can automatically ignore a TODO based on its file path (you can also ignore TODOs manually). Any existing or upcoming TODOs matching the paths you have configured will be "[soft ignored](exclusion-list.md#ignored-todo)".
+Catana can automatically ignore upcoming TODOs based on their file path. Any existing or upcoming TODOs matching the paths you have configured will be [ignored](../core-concepts/ignored-todos.md).
 
 {% hint style="info" %}
 The autocompletion field will help you configure the paths you want to ignore.\
@@ -24,11 +24,7 @@ Modifying the exclusion list will prompt you to decide whether you'd like to ign
 
 <figure><img src="../.gitbook/assets/Exclusion list confirmation.png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Ignored TODO
+When a new TODO is added to your codebase in a path that matches the exclusion list, **Catana will not**:
 
-Catana will not fully ignore a TODO added to your codebase. A TODO matching the exclusion list will still be processed and recorded; however, Catana will treat these TODOs differently:
-
-* Ignored TODOs will not be [validated](../core-concepts/validation.md).
-* Catana will not open a ticket in your issue tracker.
-* No reminders will be sent.
-* Ignored TODOs will not be counted in the stats shown on your dashboard.
+1. Run any [validation](../core-concepts/validation.md).
+2. Open a ticket in your issue tracker (if the repository has opted in for [this feature](open-github-issues.md)).
