@@ -24,7 +24,7 @@ When a user types a command, Catana will perform the requested operation and ope
 
 ### <mark style="color:blue;">Usage</mark>
 
-To perform a command, reply in a comment to a GitHub issue previously opened by Catana and **type `@catana-dev` followed by the command name**.\
+To perform a command, reply in a comment to a GitHub issue previously opened by Catana and **type `@catanacorp` followed by the command name**.\
 
 
 
