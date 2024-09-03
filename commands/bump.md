@@ -21,7 +21,7 @@ Leaving an expired TODO untouched is a bad practice for two reasons:
 
 #### <mark style="color:blue;">Command</mark>
 
-➡️  **`@catana-dev`**<mark style="color:purple;">**`bump`**</mark><mark style="color:orange;">**`[argument]`**</mark>
+➡️  **`@catanacorp`**<mark style="color:purple;">**`bump`**</mark><mark style="color:orange;">**`[argument]`**</mark>
 
 Catana will edit the TODO in the repository, open a Pull Request, and assign it to the user who invoked the command.&#x20;
 
@@ -31,9 +31,9 @@ Once the Pull Request is merged the Todo Item record in Catana's database will b
 
 This command accepts arguments such as:
 
-* `@catana-dev`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`tomorrow`**</mark>
-* `@catana-dev`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`next week`**</mark>
-* `@catana-dev`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`next month`**</mark>
-* `@catana-dev`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`2023-06-18`**</mark>   (Where 2023-06-18 can be any date)
+* `@catanacorp`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`tomorrow`**</mark>
+* `@catanacorp`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`next week`**</mark>
+* `@catanacorp`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`next month`**</mark>
+* `@catanacorp`<mark style="color:purple;">`bump`</mark><mark style="color:orange;">**`2023-06-18`**</mark>   (Where 2023-06-18 can be any date)
 
 <figure><img src="../.gitbook/assets/bump-examples.png" alt="" width="563"><figcaption></figcaption></figure>

@@ -12,7 +12,7 @@ The only action required is to remove them from your project, as they can be con
 
 #### <mark style="color:blue;">Command</mark>
 
-➡️  **`@catana-dev`**<mark style="color:purple;">**`done`**</mark>
+➡️  **`@catanacorp`**<mark style="color:purple;">**`done`**</mark>
 
 Catana will remove the TODO from the repository, open a Pull Request, and assign it to the user who invoked the command.
 
