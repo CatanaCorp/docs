@@ -28,6 +28,7 @@
 * [Overview](commands/overview.md)
 * [Done](commands/done.md)
 * [Bump](commands/bump.md)
+* [Link](commands/link.md)
 
 ## ⚙️ Configuration
 
