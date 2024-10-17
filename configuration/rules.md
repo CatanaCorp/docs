@@ -13,17 +13,18 @@ To create a rule, click on the "Add a rule" button. Each rule you add requires t
 2. The action to perform.
 
 {% hint style="info" %}
-There is only one action available as of today, which is "Remind the TODO author."
+The number of days to wait will start at a different time depending on whether a TODO has a [trigger](../triggers/overview.md):
 
-Other actions, such as "Remove the TODO from the codebase," will be implemented in the future.
+* For TODO items without a trigger, the timer starts at the time the TODO is introduced.
+* For TODO items with a trigger, the timer starts when the TODO expires. If it has not yet expired, Catana will not perform any rules.
 {% endhint %}
 
-For instance, you can configure one reminder two weeks after a TODO is introduced, a second reminder two more weeks later, and finally remove the TODO from the codebase if it has not been resolved after two months.
+For instance, you can configure an email reminder two weeks after a TODO is introduced, a second reminder two weeks later, make the TODO more visible to the team by opening an issue after a month, and finally remove the TODO from the codebase if it has not been resolved after two months.
 
 #### :warning: Note
 
-Adding a new rule will apply to both upcoming and existing TODOs.
+Adding a new rule will apply only to upcoming TODOs.
 
-For example, if you add a new rule to remind the author two weeks after a TODO is introduced, the rule will take effect for any existing TODOs that were added two weeks ago or earlier.
+For example, if you add a new rule to remind the author two weeks after a TODO is introduced, the rule will **not take effect** for existing TODOs, even if they were added two weeks ago or earlier.
 
 \
