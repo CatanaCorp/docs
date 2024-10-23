@@ -21,7 +21,8 @@
 * [GitHub Pull Request closed](triggers/github-pull-request-closed.md)
 * [Ruby Gem released](triggers/ruby-gem-released.md)
 * [Ruby Gem upgraded](triggers/ruby-gem-upgraded.md)
-* [Ruby version released](triggers/ruby-version-released.md)
+* [Ruby Version released](triggers/ruby-version-released.md)
+* [Ruby Version upgraded](triggers/ruby-version-released-1.md)
 
 ## 🤖 Commands
 
