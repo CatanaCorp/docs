@@ -31,6 +31,10 @@
 * [Bump](commands/bump.md)
 * [Link](commands/link.md)
 
+## 🔗 Grouped TODOs
+
+* [Overview](grouped-todos/overview.md)
+
 ## ⚙️ Configuration
 
 * [Open GitHub issues](configuration/open-github-issues.md)
