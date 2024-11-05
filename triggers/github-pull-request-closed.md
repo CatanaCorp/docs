@@ -1,12 +1,12 @@
 # GitHub Pull Request closed
 
 {% hint style="info" %}
-Use the GitHub Pull Request closed trigger to expire a TODO when a **GitHub Pull Request is closed.**
+The GitHub Pull Request closed is an alias to the [GitHub Issue closed trigger.](github-issue-closed.md)
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/pr-close.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Usage
+### Usage with a syntax
 
 ➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`pr_closed`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'lodash', 'lodash', 44`**</mark>**`))`**
 
@@ -14,7 +14,7 @@ Use the GitHub Pull Request closed trigger to expire a TODO when a **GitHub Pull
 
 This trigger can be used to monitor pull requests on any **public repositories or private repositories belonging to the same organization the TODO is introduced.**
 
-### Examples
+#### Examples
 
 <details>
 
@@ -23,3 +23,13 @@ This trigger can be used to monitor pull requests on any **public repositories o
 ➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`pr_closed`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'lodash', 'lodash', 44`**</mark>**`))`**
 
 </details>
+
+### Usage when detected automatically
+
+When the repository or organisation is not specified, Catana will assume you are referring to a Pull Request in the current repository.
+
+#### Examples
+
+<mark style="color:blue;">TODO</mark>:  **Skipping this test until we fix #881**\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`pr_closed`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'org', 'repo', 881`**</mark>**`)`**
+

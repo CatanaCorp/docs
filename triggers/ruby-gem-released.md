@@ -6,11 +6,11 @@ Use the Ruby Gem released trigger to expire a TODO **when a version of a Gem mat
 
 <figure><img src="../.gitbook/assets/gem-release.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Usage
+### Usage with a syntax
 
 ➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`gem_release`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'nokogiri', '> 1.15'`**</mark>**`))`**
 
-### Examples
+#### Examples
 
 <details>
 
@@ -35,3 +35,18 @@ Use the Ruby Gem released trigger to expire a TODO **when a version of a Gem mat
 ➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`gem_release`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'devise', '> 4.9.2', '< 5'`**</mark>**`))`**
 
 </details>
+
+### Usage when detected automatically
+
+Please ensure you always explicitly mention the term "gem" (literally), for Catana to correctly detect this trigger.
+
+#### Examples
+
+<mark style="color:blue;">TODO</mark>:  **Make sure to upgrade when the gem super-fun is released to 3.5.1**\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`gem_release`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'super-fun', '3.5.1'`**</mark>**`)`**
+
+<mark style="color:blue;">TODO</mark>:  **Check the required redis-rb version once the sidekiq gem gets a new release in the > 7 serie**\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`gem_release`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'sidekiq', '> 7'`**</mark>**`)`**
+
+<mark style="color:blue;">TODO</mark>:  **Do something after kuaz-thermometer cuts 3.4**\
+<mark style="color:orange;">Equivalent to</mark>:  _No detection as the term "gem" is not mentioned_

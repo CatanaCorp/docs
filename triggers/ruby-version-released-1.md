@@ -8,7 +8,7 @@ Use the Ruby upgrade trigger to expire a TODO **when Ruby is upgraded in your ap
 
 <figure><img src="../.gitbook/assets/Ruby bump trigger.png" alt=""><figcaption></figcaption></figure>
 
-### Usage
+### Usage with a syntax
 
 ➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`ruby_bump`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`[...]`**</mark>**`))`**
 
@@ -21,7 +21,7 @@ Pull Requests introducing a TODO with a `ruby_bump` trigger will [fail validatio
 * The `Gemfile.lock` file is **not** located at the root of your project.
 * The `Gemfile.lock` file lacks Ruby Version information because the `Gemfile` doesn't [specify a Ruby Version](https://bundler.io/guides/gemfile\_ruby.html).
 
-### Examples
+#### Examples
 
 <details>
 
@@ -46,3 +46,16 @@ Pull Requests introducing a TODO with a `ruby_bump` trigger will [fail validatio
 ➡️ **`TO`**➡️ **`TODO(on:`**<mark style="color:yellow;background-color:yellow;">**`ruby_bump`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'3.2.2'`**</mark>**`))`**
 
 </details>
+
+### Usage when detected automatically
+
+#### Examples
+
+<mark style="color:blue;">TODO</mark>:  **Use the new Regexp timeout feature once we are on Ruby 3.2**\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`ruby_bump`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'3.2'`**</mark>**`)`**
+
+<mark style="color:blue;">TODO</mark>:  No need to remove the tempfile manually on Ruby 3.4, if we use the anonymous keyword\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`ruby_bump`**</mark>**`(`**<mark style="color:purple;background-color:purple;">**`'3.4'`**</mark>**`)`**
+
+<mark style="color:blue;">TODO</mark>:  Do something after we upgrade Ruby\
+<mark style="color:orange;">Equivalent to</mark>: <mark style="color:yellow;background-color:yellow;">**`ruby_bump`**</mark>**`()`**
